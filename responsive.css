@@ -1,0 +1,36 @@
+@media (max-width: 767px) {
+    .navbar {
+        background-color: white !important;
+    }
+    .stats-wrapper {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .stats-wrapper>div,
+    .stats-wrapper>div:last-child {
+        border: 1px solid black;
+    }
+
+
+    .contact-right-wrapper {
+        padding: 1rem;
+    }
+
+    .contact-text, .everything-left h1, .collabrate-right h1,.testimonials > div > h1 {
+        font-size: 43px;
+        line-height: 49px;
+    }
+
+    .everything-right::before {
+        width: 74%;
+        height: 71%;
+    }
+    .heroheading h1 {
+        font-size: 3rem;
+    }
+    .sm-box{
+        width: 95%;
+    }
+}

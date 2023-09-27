@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+:root{
+    --blue:#7062E5;
+    --light-blue:#C9B9FC;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.primary-btn {
+    background-color: #7062E5;
+    border-radius: 10px;
+    color: white;
+}
+.primary-btn:hover {
+    background-color: #574cb8;
+    color: white;
+}
+.heroheading {
+  margin-top: 4rem;
+}
+.heroheading h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+.heroheading > h1 > span{
+    background-color: #C9B9FC;
+}
+.top-right{
+    background: #EEEFFE;
+    border: 2px solid #E3E4EF;
+    text-align: right;
+    border-bottom-left-radius: 1.5rem;
+    padding-top: 6rem;
+    position: relative;
+    top: -28px;
+    z-index: -1;
+    right: -66px;
+    width: 100%;
+
+}
+.top-right > img {
+    width: 100%;
+    left: -8%;
+    position: relative;
+}
+.top-img-wrapper{
+    overflow-x: clip;
+}
+.top-nav{
+    margin-right: 11rem;
+}
+.stats-wrapper > div {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding: 1rem 4rem;
+    text-align: center;
+}
+.stats-wrapper > div:last-child {
+    border-right: none;
+}
+.stats-wrapper > div > p {
+    color: rgb(143, 143, 143);
+}
+
+.features-wrapper{
+   display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, 1fr);   
+  gap: 10px; 
+}
+.everything-left h1{
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 700;
+  margin-bottom: 38px;
+}
+.everything-left{
+    margin-left: 13%;
+}
+
+.features-wrapper div img{
+    width: 40px;
+    background: var(--blue);
+    padding: 7px;
+    border-radius: 50%;
+}
+.everything-right{
+    background: #EEEFFE;
+    border: 2px solid #E3E4EF;
+    height: 22rem;
+    border-radius: 1rem 0 0 1rem;
+    margin-top: 2rem;
+    margin-left: 6rem;
+}
+.everything-right::before {
+    content: ""; 
+    position:absolute;
+    width: 26%;
+    height: 61%;
+    background-image: url('./images/features.png');
+    background-size: cover; 
+  }
+  .ev-right-wrapper{
+    position: relative;
+  }
+  .everything-section{
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+  }
+
+  .collabrate {
+    background-color: #e0e1fe;
+    margin-bottom: 8rem;
+  }
+
+  .collab-img{
+    position: relative;
+    bottom: -14%;
+    width: 90%;
+  }
+.collabrate-right{
+    margin-right: 7rem;
+    margin-top:3rem ;
+}
+  .collabrate-right h1 {
+    font-size: 60px;
+  line-height: 63px;
+  font-weight: 700;
+  }
+  .checkmark-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .checkmark-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .checkmark-list li::before {
+    content: "";
+    background: var(--light-blue);
+    border-radius: 50%;
+    background-image: url('./images/check-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .user-feedback img:first-child{
+    border-radius: 50%;
+    width: 4rem;
+  }
+  .user-feedback{
+        width: 30rem;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 13px;
+  }
+  .user-feedback h5 {
+    color: grey;
+    font-size: 17px;
+  }
+  .user-feedback h4 {
+    margin-top: 10px;
+    font-size: 22px;
+  }
+
+.feedback-wrapper{
+      display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.testimonials > div > h1 {
+  font-size: 60px;
+  line-height: 63px;
+  font-weight: 700;
+}
+
+.contact {
+  background-color: #eeeffe;
+}
+
+.contact-text{
+  font-size: 60px;
+  line-height: 63px;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  
+}
+
+.contact-right-wrapper{
+  padding: 2rem 6rem;
+  margin-top: 8%;
+}
+
+.features-wrapper > div h5 {
+  font-weight: 600;
+}
+
+.stack-img {
+  width: 84%;
+}
+
+.email-wrapper{
+  border: 1px solid black;
+  width: max-content;
+  padding: 15px 29px;
+  border-radius: 1rem;
+}
+
+.email-wrapper input{
+  border: none;
+}
+.footer-subscribe{
+  font-weight: 600;
+}
+
+.list-unstyled li a {
+  text-decoration: none;
+  color: black;
+}
+.social-icons img{
+  border: 1px solid black;
+  width: 52px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.footer-heading{
+  font-size: 28px;
+}
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  background-color: white;
+}
+
+.client-logo{
+  margin-bottom: 4rem;
+}
+.stats{
+  margin: 5rem 0;
+}

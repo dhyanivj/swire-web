@@ -18,7 +18,7 @@ body {
     color: white;
 }
 .heroheading {
-  margin-top: 4rem;
+  margin-top: 7rem;
 }
 .heroheading h1 {
     font-size: 4rem;
@@ -298,8 +298,7 @@ body {
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
+padding: 11px 0;
   border-bottom: 3px solid black;
   width: 93%;
   font-weight: 600;
@@ -307,12 +306,13 @@ body {
 .dashboard-btns > div:nth-child(1)
 {
   background-color: var(--light-blue);
-  padding: 10px;
+  padding: 6px;
   border-radius: 5px;
 }
 
 .dashboard-heading{
   width: 94%;
+  margin-bottom: 1rem;
 }
 
 .add-icon{
@@ -369,8 +369,8 @@ body {
 }
 .dashboard-card >  div:not(:last-child) {
   border-bottom: 1px solid #5e5e5e;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
+    padding-bottom: 10px;
+    margin-bottom: 12px;
   display: flex;
   position: relative;
   align-items: center;
@@ -398,6 +398,35 @@ body {
   margin-right: 5px;
   top: 5px;
     position: relative;
+}
+.arrow{
+  width: 4rem;
+  position: relative;
+  right: -3rem;
+}
+.dash-started-btn::after{
+  content: "";
+  height: 124px;
+  width: 151px;
+  background: url(./images/draw-circle.svg);
+  position: absolute;
+  right: -12px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -17px;
+  transform: rotate(8deg);
+}
+
+.dash-started-btn::before{
+  content: "";
+  height: 124px;
+  width: 99px;
+  background: url(./images/arrow1.svg);
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -23px;
+  left: -173px;
 }
 
 .dashboard-items li {
@@ -519,5 +548,19 @@ margin-bottom: 5px;
   display: flex;
   justify-content: right;
   height: max-content;
-  margin-top: 5rem;
+  margin-top:3rem;
+}
+.sidebar-dots > div {
+  background: black;
+  height:10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.sidebar-dots{
+     display: flex;
+    height: max-content;
+    position: relative;
+    top: -27px;
+    right: -61px;
+    gap: 9px;
 }
